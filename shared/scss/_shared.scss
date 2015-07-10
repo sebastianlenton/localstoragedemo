@@ -1,0 +1,28 @@
+html, body {
+	min-height:100%;
+}
+
+body {
+	background-color:$white;
+	margin:$bodyMarginTop $bodymarginSides 0 $bodymarginSides;
+	text-align: center;
+}
+
+h1, h2, p {
+	color:$veryDarkGrey;
+}
+
+a {
+	color: $black;
+}
+
+p {
+	max-width:700px;
+	margin:0 auto;
+	min-height:7em;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	user-select: none;
+}

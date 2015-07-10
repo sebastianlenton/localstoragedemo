@@ -1,0 +1,72 @@
+//sender page
+.button {
+	box-sizing:content-box;
+	display:block;
+	position:relative;
+	margin:0 auto;
+	cursor:pointer;
+	background:$white;
+	color:$veryDarkGrey;
+	line-height: $buttonLineHeight;
+	font-size: $buttonFontSize;
+	box-shadow:$generalBoxShadow;
+}
+
+//receiver page
+.receiver {
+	background:$blue;
+	position:relative;
+	transition:all $explosionTime;
+
+	&.on {
+		background:$green;
+		transform:translate( 100% );
+	}
+}
+
+.enclosure {
+	width:$squareDim * 2;
+	background:$white;
+	border-radius:$squareBorderRadius;
+	margin:0 auto;
+	box-shadow:$generalBoxShadow;
+	font-size: $buttonFontSize;
+}
+
+.date {
+	margin-top:2em;
+	font-size:2em;
+}
+
+//explode anim
+.explode {
+	//background:$red;
+	background-image:$explosionBgGrad;
+
+	animation-duration:$explosionTime;
+	animation-name: explode;
+	animation-timing-function: ease-in;
+	position:absolute;
+	top:0;
+	left:0;
+	opacity: $explosionStartOpacity;
+	mix-blend-mode: $explosionMixBlendMode;
+}
+
+@keyframes explode {
+  from {
+    transform:scale( $explosionMinScale );
+  }
+
+  to {
+    transform:scale( $explosionMaxScale );
+    opacity:0;
+  }
+}
+
+//general
+.square {
+	width:$squareDim;
+	height:$squareDim;
+	border-radius:$squareBorderRadius;
+}

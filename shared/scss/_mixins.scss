@@ -1,0 +1,36 @@
+//colours
+$red:			#ff3655;
+$blue:			#5db5ff;
+$green:			#34fe67;
+$black: 		#222222;
+$veryDarkGrey:	#555555;
+$darkGrey:		#aaaaaa;
+$lightGrey:		#cccccc;
+$offWhite:		#fafafa;
+$white:			#ffffff;
+
+$explosionBgGrad: radial-gradient(
+	rgba( $white, 0 ),
+	rgba( lighten( $red, 15% ), 0.4 ),
+	rgba( $red, 0.9 )
+);
+
+$explosionStartOpacity:		.95;
+$explosionMixBlendMode:		multiply;
+
+//dimensions
+$bodyMarginTop:		5%;
+$bodymarginSides:	10%;
+$squareDim:		220px;
+$squareBorderRadius:	60px;
+
+$buttonFontSize:38px;
+$buttonLineHeight:5.6;
+
+$generalBoxShadow: 0 .5em 2em rgba( 0, 0, 0, 0.3 );
+
+$explosionMinScale:		1.1;
+$explosionMaxScale:		4;
+
+//time
+$explosionTime:	.25s;

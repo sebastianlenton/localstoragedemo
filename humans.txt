@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Sebastian Lenton -- Developer -- @sebastianlenton
+
+# THANKS
+
+    Antonio Roberts
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, canvas, local storage
