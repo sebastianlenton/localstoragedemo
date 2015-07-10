@@ -19,7 +19,7 @@
 	}
 
 	function getDataFromLocalStorage() {
-		var newData = JSON.parse( localStorage.getItem( 'command' ) );
+		var newData = JSON.parse( localStorage.getItem( 'canvas' ) );
 		return newData.imgData;
 	}
 }());

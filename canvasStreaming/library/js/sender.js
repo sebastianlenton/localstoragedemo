@@ -18,7 +18,7 @@
 		var JSONobj = {
 			imgData : convertCanvasToBase64()
 		}
-		setLSObj( 'command', JSONobj );
+		setLSObj( 'canvas', JSONobj );
 	}
 
 	function draw() {
